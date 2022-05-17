@@ -1,8 +1,102 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
+    background-image: url(./images/pattern-background-desktop.svg),linear-gradient(hsl(225, 100%, 94%),hsla(225, 100%, 94%, 0.863));
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 * {
     box-sizing: border-box;
+}
+.card{
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    background-image: url(./images/illustration-hero.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding: 50px 50px;
+}
+
+.title {
+    margin-top: 210px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+.text {
+    text-align: center;
+    margin: 0 0 25px 0;
+    color:hsl(224, 23%, 55%);
+
+    }
+.payment-card {
+    background-color:  hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.music {
+    margin-right: 17px;
+}
+.plan {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+.payment-plan {
+    display: flex;
+    flex-direction: column;
+}
+.plan-cost {
+    color:hsl(224, 23%, 55%);
+}
+.plan, .plan-cost {
+    display: inline-block;
+}
+.payment-card > a {
+    margin-left: auto;
+    font-weight: 700;
+}
+.payment-card > a:hover,
+.payment-card > a:focus {
+    opacity: .7;
+}
+.btn{
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
+    margin-bottom: 40px;
+}
+.btn:hover,
+.btn:focus {
+    opacity: .7;
+}
+.cancel {
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.cancel:hover,
+.cancel:focus {
+    color: hsl(223, 47%, 23%);
 }
